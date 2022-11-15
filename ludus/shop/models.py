@@ -1,6 +1,6 @@
 from django.db import models
 
-class Product(models.Model):
+class Product(models.Model): #Товар
     title = models.CharField(max_length=255)
     content = models.TextField(blank = True)
     photo = models.ImageField(upload_to = "photos/%Y/%m/%d/")
